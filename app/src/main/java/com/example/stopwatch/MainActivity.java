@@ -3,9 +3,12 @@ package com.example.stopwatch;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PersistableBundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -36,13 +39,23 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        btnStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                running = true;
+  btnStart.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+          running= true ;
 
-            }
-        });
+
+      }
+  });
+//        btnStart.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//
+//               v.getBackground().set
+//                return false ;
+//            }
+//
+//        });
         btnStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
